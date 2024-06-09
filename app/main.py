@@ -16,7 +16,6 @@ set_llm_cache(InMemoryCache())
 llm = GoogleGenerativeAI(model="models/gemini-1.5-flash-latest", google_api_key=api_key, cache=True)
 
 from langchain_core.prompts import PromptTemplate
-from langchain_core.messages import HumanMessage, SystemMessage
 
 # Define prompt
 prompt_template = """Write a concise summary of the following in Korean language:
